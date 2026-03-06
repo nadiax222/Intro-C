@@ -60,11 +60,17 @@ int main() {
     int countG = 0;
     int countC = 0;
 
-    for (char nucleotide : dna) {
-        if (nucleotide == 'A') countA++;
-        else if (nucleotide == 'T') countT++;
-        else if (nucleotide == 'G') countG++;
-        else if (nucleotide == 'C') countC++;
+    for(int i = 0; i < dna.length(); i++) { //++i zwieksza o 1 implementacje 
+        char nucleotide = dna[i];
+        if (nucleotide == 'A') {
+            countA++;
+        } else if (nucleotide == 'T') {
+            countT++;
+        } else if (nucleotide == 'G') {
+            countG++;
+        } else if (nucleotide == 'C') {
+            countC++;
+        }
     }
     std::cout << "Count of A: " << countA << std::endl;
     std::cout << "Count of T: " << countT << std::endl;
@@ -72,4 +78,15 @@ int main() {
     std::cout << "Count of C: " << countC << std::endl;
     return 0;
 }
-
+//ex.2
+#include <iostream>
+#include <string>
+int main() {
+    std::string example = "dates are great";
+    int i = 0;
+    while (i < example.length() && example[i] != 'g') {
+        std::cout << example[i] << std::endl;
+        i++;
+    }
+    return 0;
+}
