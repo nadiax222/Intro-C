@@ -90,3 +90,23 @@ int main() {
     }
     return 0;
 }
+
+//ex.3
+#include <iostream>
+#include <string>
+int main() {
+    std::string text;
+    std::cout << "Enter a string: ";
+    std::cin >> text;
+
+    int i = 0;
+    int length = 0;
+
+    do {
+        length++;
+        i++;
+    } while (i < text.length());
+
+    std::cout << "Length of the string: " << length << std::endl;
+    return 0;
+}
