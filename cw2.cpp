@@ -49,3 +49,27 @@ int main() {
     return 0;
 }
 
+//PETLE 
+//ex.1
+#include <iostream>
+#include <string>
+int main() {
+    std::string dna = "ATGCGATATCGGATCGA";
+    int countA = 0;
+    int countT = 0;
+    int countG = 0;
+    int countC = 0;
+
+    for (char nucleotide : dna) {
+        if (nucleotide == 'A') countA++;
+        else if (nucleotide == 'T') countT++;
+        else if (nucleotide == 'G') countG++;
+        else if (nucleotide == 'C') countC++;
+    }
+    std::cout << "Count of A: " << countA << std::endl;
+    std::cout << "Count of T: " << countT << std::endl;
+    std::cout << "Count of G: " << countG << std::endl;
+    std::cout << "Count of C: " << countC << std::endl;
+    return 0;
+}
+
