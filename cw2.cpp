@@ -1,15 +1,22 @@
+//ex.1
 #include <iostream> 
 int main() {
     std::cout << "Hello World" << std::endl;
     return 0;
 }
 
+//ex.2
+#include <iostream> 
+#include <string>
 int main() {
     int a = 7;
     float b = 7.5;
     char letter = 'A';
 }
 
+//ex.3
+#include <iostream> 
+#include <string>
 int main() {
     int a = 3;
     int b = 11;
@@ -18,6 +25,9 @@ int main() {
     return 0;
 }
 
+//ex.4
+#include <iostream> 
+#include <string>
 int main() {
     float x = 12;
     float y = 7;
@@ -28,6 +38,9 @@ int main() {
     return 0;
 }
 
+//ex. 5
+#include <iostream> 
+#include <string>
 int main() {
     char name[] = "Nadia";
     char surname[] = "Cichocka";
