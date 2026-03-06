@@ -79,14 +79,3 @@ int main() {
     return 0;
 }
 //ex.2
-#include <iostream>
-#include <string>
-int main() {
-    std::string example = "dates are great";
-    int i = 0;
-    while (i < example.length() && example[i] != 'g') {
-        std::cout << example[i] << std::endl;
-        i++;
-    }
-    return 0;
-}
