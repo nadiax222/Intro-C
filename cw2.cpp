@@ -181,4 +181,17 @@ int main() {
     return 0;
 }
 
+// ex.4
+#include <iostream>
+#include <string>
+using namespace std;
+string x = "True";
+int liczba(int a) {
+    if(a / 4 == 0) {
+    }
+}
+int main() {
+    cout << "Give me a number: ";
+    cin >> a >> endl;
 
+// UNFINISHED!!!!!
