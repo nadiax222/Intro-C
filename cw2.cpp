@@ -110,3 +110,75 @@ int main() {
     std::cout << "Length of the string: " << length << std::endl;
     return 0;
 }
+
+//13.03.2026
+
+//ex.4
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string input;
+    cout << "Enter a string: ";
+    cin >> input;
+    int g = 0;
+    int c = 0;
+    float s = 0;
+    for (int i = 0; i < input.length(); ++i) {
+        if (input[i] == 'G') g++;
+        else if (input[i] == 'C') c++;
+        ++s;
+    }
+    cout << "Liczba G: " << g << endl;
+    cout << "Liczba C: " << c << endl;
+    cout << "Zawartosc GC w sekwencji: " << (g + c) / s * 100 << "%" << endl;
+    return 0;
+}
+
+//FUNKCJE
+//ex.1
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    char input;
+    cout << "Enter a letter: " << endl;
+    cin >> input;
+    for (char input = 'A'; input <= 'Z'; input) {
+        input++;
+    }
+    cout << ++input << endl; 
+    return 0;
+}
+
+//ex.2
+#include <iostream>
+#include <string>
+using namespace std;
+
+string love() {
+    return "I love c++ !";
+} 
+int main() {
+    string lol = love();
+    cout << lol << endl;
+    return 0;
+}
+
+//ex.3
+#include <iostream>
+#include <string>
+using namespace std;
+int multiply(int a, int b) {
+    return a * b;
+}
+int main() {
+    cout << "Give me 2 numbers (separately)…: ";
+    int x, y; 
+    cin >> x >> y; 
+    cout << "The product of " << x << "*" << y << " is...: " << multiply(x,y) << endl;
+    return 0;
+}
+
+
