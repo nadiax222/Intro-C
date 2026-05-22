@@ -14,7 +14,7 @@
 #include "funkcje.h"
 using namespace std;
 int main() {
-	string dna = wczytajDNA("dna.txt");
+	string dna = wczytajDNA("DNA_przyklad.txt");
 
 	if (dna == "") {
 		cout << "Nie można wczytać sekwencji DNA z pliku." << endl;
@@ -31,4 +31,7 @@ int main() {
 	return 0;
 
 }
+
+
+
 
