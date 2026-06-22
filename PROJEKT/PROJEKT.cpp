@@ -11,7 +11,7 @@
 //- Projekt wykorzystuje pliki typu.h i.c do deklarowania stałych i funkcji wykorzystywanych w projekcie.
 
 #include <iostream>
-#include "funkcje.h"
+#include "Header.h"
 using namespace std;
 int main() {
 	string dna = wczytajDNA("DNA_przyklad.txt");
@@ -26,7 +26,7 @@ int main() {
 	cout << "Sekwencja mRNA: " << mrna << endl;
 	cout << "Sekwencja DNA: " << dna << endl;
 
-	tłumacz(mrna);
+	tlumacz(mrna);
 
 	return 0;
 
