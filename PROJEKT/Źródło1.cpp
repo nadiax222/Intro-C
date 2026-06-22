@@ -155,8 +155,7 @@ void tlumacz(string mrna) {
 
                     znalezionoStop = true;
 
-                    // Po znalezieniu STOP nie konczymy programu.
-                    // Przesuwamy zewnetrzna petle za STOP i szukamy kolejnego START.
+                    
                     i = j + 2;
                     break;
                 }
